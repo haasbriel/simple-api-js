@@ -1,0 +1,74 @@
+GET http://localhost:3000/bib/1 
+
+###
+
+GET http://localhost:3000/bib/book/2
+
+###
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/books
+
+###
+
+PUT  http://localhost:3000/bib/user/0
+Content-Type: application/json
+
+
+
+{
+    "nome": "John Updated",
+    "email": "john.updated@example.com",
+    "senha": "newpassword123"
+}
+
+###
+PUT  http://localhost:3000/bib/book/1
+Content-Type: application/json
+{
+    "title" : "Title Update",
+    "isbn": 55555555555555,
+    "edition": "Edition Update",
+    "author": "Author Update"
+}
+###
+POST  http://localhost:3000/bib/user
+Content-Type: application/json
+
+
+
+{
+    "id": 9,
+    "nome": "Maria",
+    "email": "maria@gmail.com",
+    "senha": "5566788974"
+
+}
+###
+
+POST  http://localhost:3000/bib/book
+Content-Type: application/json
+
+
+
+{
+    "title" : "O indomável",
+    "isbn": 36569521512521,
+    "edition": "Edição Pega aí - Leitura Grátis",
+    "author": "Harold Robbins"
+
+}
+
+###
+
+DELETE  http://localhost:3000/bib/users/2
+###
+
+DELETE  http://localhost:3000/bib/books/2
+
+
+
+
+
+
